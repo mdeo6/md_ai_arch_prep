@@ -4,6 +4,9 @@ def check_secrets():
     aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
     aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
 
+    print(f"AWS_ACCESS_KEY_ID: {aws_access_key_id}")
+    print(f"AWS_SECRET_ACCESS_KEY: {aws_secret_access_key}")
+
     if aws_access_key_id and aws_secret_access_key:
         print("AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY are set.")
     else:
