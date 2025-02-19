@@ -50,5 +50,5 @@ jobs:
       run: terraform apply -auto-approve
       working-directory: terraform
       env:
-        AWS_ACCESS_KEY_ID: ${{mdaws_user}}
-        AWS_SECRET_ACCESS_KEY: ${{Manu@2190}}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
